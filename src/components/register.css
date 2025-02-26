@@ -1,0 +1,161 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background styling */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url('https://images.unsplash.com/photo-1534723452862-4c874018d66d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps the background covering beyond 100vh */
+  padding: 60px 0; /* Adds gap at top and bottom */
+}
+
+/* Centered form container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 420px; /* Increased width */
+  padding: 20px;
+  min-height: 60vh; /* Ensures form is not too tall */
+}
+
+/* Form styling with glassmorphism */
+.form {
+  width: 100%;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Form title */
+h2 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+/* Form fields */
+.form-field {
+  width: 100%;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+/* Labels */
+label {
+  display: block;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* Show/hide password button */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.show-password-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: lightblue;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: #5c6bc0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #3f51b5;
+}
+
+/* Error & success messages */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -5px;
+}
+
+.success {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Link button */
+.link-btn {
+  padding: 5px;
+  font-size: 14px;
+  background: none;
+  color: white;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .form-container {
+    width: 90%;
+  }
+
+  .form {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input {
+    padding: 8px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

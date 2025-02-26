@@ -1,0 +1,28 @@
+/* Ensure the CSS file applies properly */
+.product-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 12px !important;
+    /* background-color: rgb(255, 255, 255) !important; */
+    color: black;
+  }
+  
+  /* Hover Effect - Scale & Shadow */
+  .product-card:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  /* Add smooth transition effect to button */
+  .add-to-cart-button {
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out !important;
+  }
+  
+  /* Button Hover Effect - Slightly Scales Up */
+  .add-to-cart-button:hover {
+    transform: scale(1.05) !important;
+  }
+  h2{
+    color: black;
+  }
+  
